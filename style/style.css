@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.conteiner {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 255, 0.185);
+
+}
+
+.conteiner .bird {
+    width: 500px;
+    height: 500px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+}
+
+.conteiner .bird .redConteiner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: redAmin 3s ease-in-out infinite;
+}
+
+@keyframes redAmin {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    15% {
+        transform: rotateZ(90deg);
+    }
+
+    50% {
+        transform: rotateZ(180deg);
+    }
+
+    75% {
+        transform: rotateZ(270deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.conteiner .bird .redConteiner .red {
+    width: 50%;
+    height: 100%;
+    background-color: red;
+    border-top-left-radius: 250px;
+    border-bottom-left-radius: 250px;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+
+.conteiner .bird  .face {
+    width: 70%;
+    height: 70%;
+    border: 1px solid rgb(255, 255, 255);
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    /* transform: translate(-50%,-50%); */
+
+
+
+}
+
+.conteiner .bird .face .whiteConteiner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    /* animation-name: WhiteAmin;
+    animation-duration: 3s; */
+    animation: WhiteAmin 3s ease infinite;
+
+
+}
+
+@keyframes WhiteAmin {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    15% {
+        transform: rotateZ(-90deg);
+    }
+
+    50% {
+        transform: rotateZ(-180deg);
+    }
+
+    75% {
+        transform: rotateZ(-270deg);
+    }
+
+    100% {
+        transform: rotateZ(-360deg);
+    }
+}
+
+.conteiner .bird .face .whiteConteiner .white {
+    width: 50%;
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0);
+    background-color: white;
+
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+}
+
+.conteiner .bird .face .yellowConteiner {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: -0%;
+    right: -0%;
+    /* animation-name: YellowAmin;
+    animation-duration: 3s; */
+    animation: YellowAmin 3s ease infinite;
+}
+
+@keyframes YellowAmin {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    50% {
+        transform: rotateZ(-90deg);
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+
+.conteiner .bird .face .yellowConteiner .yellow {
+    width: 50%;
+    height: 50%;
+    border: 1px solid rgba(255, 255, 255, 0);
+    background-color: yellow;
+
+    position: absolute;
+    top: -0%;
+    right: -0%;
+    border-top-right-radius: 250px;
+    /* border-bottom-left-radius: 250px; */
+
+}
+
+.conteiner .bird .face .blackConteiner {
+    width: 100%;
+    height: 100%;
+    /* animation-name: BlackAmin;
+    animation-duration: 3s; */
+    animation: BlackAmin 3s ease infinite;
+
+}
+
+@keyframes BlackAmin {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(70px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+
+
+.conteiner .bird .face .black {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #000;
+    background-color: black;
+    border-radius: 100%;
+    position: absolute;
+    top: 30%;
+    right: 50%;
+
+}
+
+
+
+.conteiner .bird  .face .orengeConteiner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    animation: OrangeAmin 3s ease infinite;
+}
+
+@keyframes OrangeAmin {
+    0% {
+        transform: rotateZ(45deg);
+    }
+
+    50% {
+        transform: rotateZ(90deg);
+    }
+}
+
+.conteiner .bird  .face .orengeConteiner .orenge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: orange;
+    width: 20%;
+    height: 20%;
+    border-bottom-right-radius: 90px;
+
+}
+.conteiner .bird .face .shadowConteiner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    animation: ShadowAmin 3s ease infinite;  
+}
+.conteiner .bird  .face .shadowConteiner .shadow {
+    width: 50%;
+    height: 50%;
+    border: 1px solid rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0.383);
+
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    /* border-top-left-radius: 200px; */
+    border-bottom-left-radius: 200px;
+
+}
+@keyframes ShadowAmin {
+    0% {
+        transform: rotateZ(180deg);
+    }
+
+    50% {
+        transform: rotateZ(270deg);
+    }
+
+    100% {
+        transform: rotateZ(180deg);
+    }
+}
